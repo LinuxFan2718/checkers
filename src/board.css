@@ -1,0 +1,12 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0;
+  grid-auto-rows: minmax(10px, auto);
+}
+
+.board > div::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
