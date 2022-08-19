@@ -3,6 +3,8 @@
   grid-template-columns: repeat(8, 1fr);
   gap: 0;
   grid-auto-rows: minmax(10px, auto);
+  width: min(80vw, 80vh);
+  height: min(80vw, 80vh);
 }
 
 .board > div::before {
