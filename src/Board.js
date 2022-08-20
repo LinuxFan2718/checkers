@@ -8,8 +8,12 @@ function Board() {
       {
         [...Array(size)].map(
           (x, i) => 
-            [...Array(size)].map( (y, j) => <Square i={i} j={j} key={[i,j]} /> )
-      )}
+            [...Array(size)].map(
+              (y, j) =>
+                <Square i={i} j={j} key={[i,j]} />
+            )
+        )
+      }
     </div>
   );
 }
