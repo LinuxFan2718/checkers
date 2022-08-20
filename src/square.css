@@ -1,3 +1,9 @@
+.square.selected {
+  border: aliceblue;
+  border-style: solid;
+  border-width: thick;
+}
+
 .piece {
   clip-path: circle(25%);
   height: 100%;

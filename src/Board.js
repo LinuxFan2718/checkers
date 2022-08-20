@@ -2,10 +2,7 @@ import Square from "./Square";
 import './board.css'
 import { useState } from "react";
 
-
-
 function Board() {
-  const size = 8;
   const [positions, setPositions] = useState([
     [null, 'red', null, 'red', null, 'red', null, 'red'],
     ['red', null, 'red', null, 'red', null, 'red', null],

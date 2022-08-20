@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './square.css'
 
 function oddEvenClass(num) {
@@ -5,8 +6,16 @@ function oddEvenClass(num) {
 }
 
 function Square(props) {
+  const [selectClass, setSelectClass] = useState(null)
+  const handleClick = () => {
+    if (selectClass) {
+      setSelectClass(null);
+    } else {
+      setSelectClass('selected');
+    }
+  }
   return (
-    <div className={"square " + oddEvenClass(props.i)}>
+    <div className={"square " + oddEvenClass(props.i) + " " + selectClass} onClick={handleClick}>
       <div className={"piece " + props.piece}></div>
     </div>
   );
