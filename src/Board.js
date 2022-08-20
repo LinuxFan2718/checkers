@@ -2,12 +2,13 @@ import Square from "./Square";
 import './board.css'
 
 function Board() {
+  const size = 8;
   return (
     <div className="board">
       {
-        [...Array(8)].map(
+        [...Array(size)].map(
           (x, i) => 
-            [...Array(8)].map( (y, j) => <Square i={i} j={j} key={[i,j]} /> )
+            [...Array(size)].map( (y, j) => <Square i={i} j={j} key={[i,j]} /> )
       )}
     </div>
   );
