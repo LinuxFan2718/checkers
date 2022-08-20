@@ -7,7 +7,7 @@ function oddEvenClass(num) {
 function Square(props) {
   return (
     <div className={"square " + oddEvenClass(props.i)}>
-      <div className={"piece " + "black"}></div>
+      <div className={"piece " + props.piece}></div>
     </div>
   );
 }
