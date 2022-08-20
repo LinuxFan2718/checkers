@@ -1,4 +1,15 @@
+.piece {
+  clip-path: circle(25%);
+  height: 100%;
+}
 
+.piece.red {
+  background: red;
+}
+
+.piece.black {
+  background: black;
+}
 
 .even:nth-of-type(odd) {
   background-color: #ffeebb;

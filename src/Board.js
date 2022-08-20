@@ -10,7 +10,7 @@ function Board() {
           (x, i) => 
             [...Array(size)].map(
               (y, j) =>
-                <Square i={i} j={j} key={[i,j]} />
+                <Square i={i} j={j} key={[i,j]} piece={'null'} />
             )
         )
       }
